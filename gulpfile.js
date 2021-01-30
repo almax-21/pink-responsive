@@ -9,6 +9,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const csso = require('gulp-csso');
 const imagemin = require("gulp-imagemin");
+const svgstore = require("gulp-svgstore");
 const uglify = require('gulp-uglify-es').default;
 const del = require("del");
 const server = require("browser-sync").create();
@@ -34,6 +35,15 @@ gulp.task("images", function () {
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.mozjpeg({progressive: true})
     ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("source/img"));
 });
 
