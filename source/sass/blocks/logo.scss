@@ -1,0 +1,54 @@
+/* logo */
+
+.logo__svg {
+  width: 75px;
+  height: 23px;
+
+  transition-duration: 0.15s;
+
+  fill: #ffffff;
+
+  &:hover {
+    fill: $additional-color;
+  }
+
+  &:active {
+    opacity: 0.3;
+
+    fill: #ffffff;
+  }
+}
+
+.logo__svg--tablet,
+.logo__svg--desktop {
+  display: none;
+}
+
+.logo__svg--mobile {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__svg {
+    width: 146px;
+    height: 40px;
+  }
+
+  .logo__svg--mobile {
+    display: none;
+  }
+
+  .logo__svg--tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__svg--tablet {
+    display: none;
+  }
+
+  .logo__svg--desktop {
+    display: block;
+  }
+}
