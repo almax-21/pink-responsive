@@ -15,6 +15,13 @@
 @import "blocks/site-list.scss";
 // === / header ===
 
-// === other ===
+// === main ===
+@import "blocks/preview.scss";
+@import "blocks/download.scss";
+@import "blocks/apps.scss";
+// === / main ===
+
+// === assets ===
+@import "blocks/button.scss";
 @import "blocks/overlay.scss";
-// === / other ===
+// === / assets ===

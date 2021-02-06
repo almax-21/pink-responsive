@@ -1,16 +1,22 @@
 /* header */
 
+.header {
+  z-index: 100;
+}
+
 @media (max-width: $non-desktop-width-only) {
   .header {
     position: sticky;
-    z-index: 100;
     top: 0;
-    left: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .header {
+    position: absolute;
+
+    width: 100%;
+
     background-color: rgba(0, 0, 0, 0.75);
   }
 }

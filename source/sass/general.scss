@@ -5,6 +5,9 @@
 }
 
 body {
+  position: absolute;
+  top: -66px;
+
   min-width: 320px;
   margin: 0;
   padding: 0;
@@ -44,4 +47,16 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
+}
+
+@media (min-width: $tablet-width) {
+  body {
+    top: -110px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    position: static;
+  }
 }

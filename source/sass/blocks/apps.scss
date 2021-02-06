@@ -1,0 +1,15 @@
+.apps {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 240px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.apps__item {
+  display: flex;
+  align-items: flex-end;
+  height: 65px;
+}
