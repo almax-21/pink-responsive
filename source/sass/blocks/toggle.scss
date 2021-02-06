@@ -31,7 +31,7 @@
   background-color: #ffffff;
 
   transition-timing-function: linear;
-  transition-duration: 0.15s;
+  transition-duration: $animation-time;
 }
 
 .toggle__bar-1 {

@@ -54,7 +54,7 @@
     display: block;
 
     animation-name: drop-down;
-    animation-duration: 0.15s;
+    animation-duration: $animation-time;
     animation-timing-function: linear;
   }
 }
