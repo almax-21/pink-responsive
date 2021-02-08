@@ -1,0 +1,209 @@
+.features {
+  padding-top: 42px;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  background-color: $white-two;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 4500px 465px;
+}
+
+.features__lead {
+  width: 205px;
+  margin: 0 auto;
+  margin-bottom: 115px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+
+  span {
+    display: block;
+    margin-top: 30px;
+  }
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 290px;
+
+  list-style: none;
+
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 111%;
+  background-size: 157px 320px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-screen-mobile@2x.png");
+  }
+}
+
+.features__item {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+
+  text-align: center;
+}
+
+.features__subtitle {
+  margin-top: 0;
+  margin-bottom: 12px;
+
+  font-size: 18px;
+  color: $black;
+}
+
+.features__text {
+  margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .features {
+    padding-top: 50px;
+    padding-right: 0;
+    padding-left: 0;
+
+    background-size: 6750px 530px;
+  }
+
+  .features__lead {
+    width: 590px;
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    line-height: 48px;
+
+    span {
+      width: 400px;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 620px;
+    min-height: 480px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 20px;
+
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 268px 481px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-screen-3-tablet@2x.png");
+    }
+  }
+
+  .features__item {
+    width: 310px;
+    max-width: auto;
+    margin-right: 0;
+
+    text-align: left;
+
+    &--world {
+      span {
+        display: block;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features {
+    padding-top: 67px;
+
+    background-size: 10000px 743px;
+  }
+
+  .features__lead {
+    width: 750px;
+    margin-bottom: 75px;
+
+    font-size: 50px;
+    line-height: 60px;
+
+    span {
+      width: 500px;
+    }
+  }
+
+  .features__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 890px;
+    min-height: auto;
+
+    background-image: none;
+  }
+
+  .features__item {
+    width: 245px;
+    margin-left: 0;
+    padding-top: 358px;
+
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 292px 302px;
+
+    &--mood {
+      background-image: url("../img/iphone-screen-1-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-1-desktop@2x.png");
+      }
+    }
+
+    &--world {
+      background-image: url("../img/iphone-screen-2-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-2-desktop@2x.png");
+      }
+
+      span {
+        display: inline;
+      }
+    }
+
+    &--friends {
+      background-image: url("../img/iphone-screen-3-desktop@1x.png");
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/iphone-screen-3-desktop@2x.png");
+      }
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .features__subtitle {
+    margin-bottom: 25px;
+
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .features__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}

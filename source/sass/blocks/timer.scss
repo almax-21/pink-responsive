@@ -1,0 +1,55 @@
+.timer {
+  position: absolute;
+
+  fill: #dedede;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 55px;
+    left: 19px;
+
+    width: 202px;
+    height: 202px;
+
+    border: 13px solid $additional-color;
+    border-radius: 50%;
+  }
+
+  &::after {
+    content: "24";
+    position: absolute;
+    top: 76px;
+    left: 64px;
+
+    font-weight: bold;
+    font-size: 96px;
+    line-height: 150px;
+    color: $additional-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .timer__svg {
+    width: 298px;
+    height: 345px;
+  }
+
+  .timer::before {
+    top: 69px;
+    left: 23px;
+
+    width: 253px;
+    height: 253px;
+
+    border-width: 17px;
+  }
+
+  .timer::after {
+    top: 95px;
+    left: 80px;
+
+    font-size: 120px;
+    line-height: 187px;
+  }
+}
