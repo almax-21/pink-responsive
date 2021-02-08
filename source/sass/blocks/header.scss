@@ -9,12 +9,16 @@
   }
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .header {
     position: absolute;
 
     width: 100%;
+  }
+}
 
+@media (min-width: $desktop-width) {
+  .header {
     background-color: rgba(0, 0, 0, 0.75);
   }
 }

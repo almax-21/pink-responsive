@@ -21,6 +21,12 @@ body {
   background-color: #ffffff;
 }
 
+@media (min-width: $tablet-width) {
+  body {
+    position: static;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -47,16 +53,4 @@ input[type="radio"].visually-hidden {
 
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
-}
-
-@media (min-width: $tablet-width) {
-  body {
-    top: -110px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  body {
-    position: static;
-  }
 }
