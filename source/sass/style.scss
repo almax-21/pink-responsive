@@ -7,6 +7,12 @@
 @import "general.scss";
 // === / foundation ===
 
+// === assets ===
+@import "blocks/button.scss";
+@import "blocks/dots.scss";
+@import "blocks/overlay.scss";
+// === / assets ===
+
 // === header ===
 @import "blocks/header.scss";
 @import "blocks/main-nav.scss";
@@ -15,16 +21,13 @@
 @import "blocks/site-list.scss";
 // === / header ===
 
-// === main ===
+// === index-main ===
 @import "blocks/preview.scss";
 @import "blocks/download.scss";
 @import "blocks/apps.scss";
 @import "blocks/features.scss";
 @import "blocks/research.scss";
 @import "blocks/timer.scss";
-// === / main ===
-
-// === assets ===
-@import "blocks/button.scss";
-@import "blocks/overlay.scss";
-// === / assets ===
+@import "blocks/reviews.scss";
+@import "blocks/slider.scss";
+// === / index-main ===
