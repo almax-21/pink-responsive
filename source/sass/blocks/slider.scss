@@ -24,6 +24,7 @@
 }
 
 .slider__quote {
+  min-height: 180px;
   margin-bottom: 25px;
 
   font-size: 14px;
@@ -65,6 +66,7 @@
 
   .slider__quote {
     width: 620px;
+    min-height: none;
     margin-top: 0;
     margin-bottom: 35px;
 
@@ -109,9 +111,5 @@
     &--next {
       right: 104px;
     }
-  }
-
-  .slider__dots {
-    display: none;
   }
 }
