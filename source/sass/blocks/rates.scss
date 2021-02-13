@@ -1,0 +1,236 @@
+.rates {
+  position: relative;
+
+  height: 506px;
+
+  background-color: $white-two;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+}
+
+.rates__table {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 259%;
+  margin: 0 auto;
+
+  border-collapse: collapse;
+  line-height: 30px;
+
+  transform: translate(-50%, -50%);
+}
+
+.rates__header {
+  position: relative;
+
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  color: $white;
+
+  background-color: $main-color;
+  border: 2px solid #e5e5e5;
+
+  &--none {
+    display: none;
+  }
+}
+
+.rates__header--hit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-image: url("../img/bg-hit-tablet.svg");
+  background-repeat: no-repeat;
+  background-position: contain;
+}
+
+.rates__header--hit::after {
+  content: "ХИТ";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+
+  font-weight: normal;
+  font-size: 15px;
+  color: $white;
+
+  transform: rotate(-45deg);
+}
+
+.rates__subtitle {
+  display: block;
+
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.rates__money {
+  display: block;
+
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.rates__cell {
+  padding: 20px 20px;
+
+  text-align: left;
+  text-transform: uppercase;
+
+  background-color: $white;
+  border: 2px solid #e5e5e5;
+
+  span {
+    display: inline-block;
+    width: 85%;
+  }
+
+  svg {
+    display: inline-block;
+  }
+}
+
+.rates__cell--name {
+  display: none;
+}
+
+.rates__cell--yes svg {
+  vertical-align: middle;
+}
+
+.rates__cell--no svg {
+  vertical-align: bottom;
+}
+
+.rates__dots {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+
+  transform: translateX(-50%);
+}
+
+@media (min-width: $tablet-width) {
+  .rates {
+    height: 380px;
+    padding-top: 85px;
+
+    background-color: $white-two;
+    background-image: url("../img/bg-triangle-white.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+  }
+
+  .rates__table {
+    position: static;
+
+    width: 620px;
+    margin: 0 auto;
+
+    border-collapse: collapse;
+    line-height: 30px;
+
+    transform: translate(-0%, -0%);
+  }
+
+  .rates__header {
+    padding: 10px 35px;
+
+    color: $white;
+
+    background-color: $main-color;
+    border: 2px solid #e5e5e5;
+
+    &--none {
+      display: table-cell;
+    }
+  }
+
+  .rates__subtitle {
+    font-size: 16px;
+  }
+
+  .rates__money {
+    font-size: 18px;
+  }
+
+  .rates__cell {
+    padding: 7px 0;
+
+    text-align: center;
+    text-transform: none;
+
+    span {
+      display: none;
+    }
+  }
+
+  .rates__cell--name {
+    display: table-cell;
+    padding: 5px 15px;
+
+    text-align: left;
+  }
+
+  .rates__cell--yes svg {
+    vertical-align: middle;
+  }
+
+  .rates__cell--no svg {
+    vertical-align: bottom;
+  }
+
+  .rates__dots {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates {
+    height: 515px;
+    padding-top: 138px;
+  }
+
+  .rates__table {
+    width: 940px;
+    height: 280px;
+  }
+
+  .rates__cell--name {
+    width: 235px;
+    padding-left: 25px;
+    font-size: 18px;
+  }
+
+  .rates__subtitle {
+    font-size: 18px;
+  }
+
+  .rates__money {
+    font-size: 24px;
+  }
+
+  .rates__header--hit::before {
+    width: 74px;
+    height: 74px;
+
+    background-image: url("../img/bg-hit.svg");
+  }
+
+  .rates__header--hit::after {
+    top: 11px;
+    left: 11px;
+  }
+}
