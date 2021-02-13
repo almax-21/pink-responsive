@@ -219,7 +219,7 @@
 
           <div class="slider__dots dots">
             <button class="dots__dot dots__dot--active" type="button">
-              <span class="visually-hidden">Текущий слайд</span>
+              <span class="visually-hidden">Выбрать слайд</span>
             </button>
             <button class="dots__dot" type="button">
               <span class="visually-hidden">Выбрать слайд</span>
@@ -235,90 +235,95 @@
       <!-- rates -->
       <section class="rates">
         <h2 class="visually-hidden">Тарифы и цены</h2>
-        <table class="rates__table">
-          <tr>
-            <th class="rates__header--none"></th>
-            <th class="rates__header">
-              <span class="rates__subtitle">База</span>
-              <span class="rates__money">1,99 USD</span>
-            </th>
-            <th class="rates__header rates__header--hit">
-              <span class="rates__subtitle">Стандарт</span>
-              <span class="rates__money">3,99 USD</span>
-            </th>
-            <th class="rates__header">
-              <span class="rates__subtitle">Анлим</span>
-              <span class="rates__money">9,99 USD</span>
-            </th>
-          </tr>
-          <tr>
-            <td class="rates__cell rates__cell--name">Розовый фильтр</td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Розовый фильтр</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Розовый фильтр</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Розовый фильтр</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <td class="rates__cell rates__cell--name">Смайлики</td>
-            <td class="rates__cell rates__cell--no">
-              <span>Смайлики</span>
-              <svg width="26.752" height="26.752" fill="#f25b26">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Смайлики</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Смайлики</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-          <tr>
-            <td class="rates__cell rates__cell--name">Комментарии</td>
-            <td class="rates__cell rates__cell--no">
-              <span>Комментарии</span>
-              <svg width="26.752" height="26.752" fill="#f25b26">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--no">
-              <span>Комментарии</span>
-              <svg width="26.752" height="26.752" fill="#f25b26">
-                <use xlink:href="img/sprite.svg#icon-no"></use>
-              </svg>
-            </td>
-            <td class="rates__cell rates__cell--yes">
-              <span>Комментарии</span>
-              <svg width="22" height="16" fill="#3dc644">
-                <use xlink:href="img/sprite.svg#icon-yes"></use>
-              </svg>
-            </td>
-          </tr>
-        </table>
+        <div class="rates__wrapper">
+          <table class="rates__table">
+            <tr>
+              <th class="rates__header--none"></th>
+              <th class="rates__header">
+                <span class="rates__subtitle">База</span>
+                <br>
+                <span class="rates__money">1,99 USD</span>
+              </th>
+              <th class="rates__header rates__header--hit">
+                <span class="rates__subtitle">Стандарт</span>
+                <br>
+                <span class="rates__money">3,99 USD</span>
+              </th>
+              <th class="rates__header">
+                <span class="rates__subtitle">Анлим</span>
+                <br>
+                <span class="rates__money">9,99 USD</span>
+              </th>
+            </tr>
+            <tr>
+              <td class="rates__cell rates__cell--name">Розовый фильтр</td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Розовый фильтр</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Розовый фильтр</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Розовый фильтр</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__cell rates__cell--name">Смайлики</td>
+              <td class="rates__cell rates__cell--no">
+                <span class="rates__subject">Смайлики</span>
+                <svg width="26.752" height="26.752" fill="#f25b26">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Смайлики</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Смайлики</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+            <tr>
+              <td class="rates__cell rates__cell--name">Комментарии</td>
+              <td class="rates__cell rates__cell--no">
+                <span class="rates__subject">Комментарии</span>
+                <svg width="26.752" height="26.752" fill="#f25b26">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--no">
+                <span class="rates__subject">Комментарии</span>
+                <svg width="26.752" height="26.752" fill="#f25b26">
+                  <use xlink:href="img/sprite.svg#icon-no"></use>
+                </svg>
+              </td>
+              <td class="rates__cell rates__cell--yes">
+                <span class="rates__subject">Комментарии</span>
+                <svg width="22" height="16" fill="#3dc644">
+                  <use xlink:href="img/sprite.svg#icon-yes"></use>
+                </svg>
+              </td>
+            </tr>
+          </table>
+        </div>
 
         <div class="rates__dots dots">
           <button class="dots__dot" type="button">
-            <span class="visually-hidden">Текущий слайд</span>
+            <span class="visually-hidden">Выбрать слайд</span>
           </button>
           <button class="dots__dot dots__dot--active" type="button">
             <span class="visually-hidden">Выбрать слайд</span>
