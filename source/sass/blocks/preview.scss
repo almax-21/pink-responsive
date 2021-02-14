@@ -102,6 +102,7 @@
     padding-top: 218px;
 
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-color: $main-color;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
