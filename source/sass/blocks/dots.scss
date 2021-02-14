@@ -28,15 +28,19 @@
   &:last-child {
     margin-right: 0;
   }
+}
 
-  &--active {
-    width: 12px;
-    height: 12px;
-    margin-right: 12px;
+.dots__dot--active {
+  width: 12px;
+  height: 12px;
+  margin-right: 12px;
 
-    background-color: $white;
-    border: 3px solid $main-color;
-    cursor: auto;
+  background-color: $white;
+  border: 3px solid $main-color;
+  cursor: auto;
+  opacity: 1;
+
+  &:hover {
     opacity: 1;
   }
 }
