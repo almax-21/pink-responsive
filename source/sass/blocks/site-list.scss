@@ -1,4 +1,6 @@
 .site-list {
+  margin: 0;
+
   background-color: $main-color;
 
   @include list-reset;

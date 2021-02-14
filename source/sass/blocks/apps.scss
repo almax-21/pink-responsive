@@ -3,9 +3,8 @@
   justify-content: space-around;
   align-items: center;
   width: 240px;
-  padding: 0;
 
-  list-style: none;
+  @include list-reset;
 }
 
 .apps__item {
