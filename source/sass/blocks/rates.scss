@@ -23,6 +23,7 @@
   border-collapse: collapse;
   line-height: 30px;
   transition: $animation-time;
+  transform: translateX(-50%);
 }
 
 .rates__header {
