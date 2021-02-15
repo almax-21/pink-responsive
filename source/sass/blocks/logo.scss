@@ -17,6 +17,19 @@
   }
 }
 
+.logo__svg--purple {
+  width: 146px;
+  height: 40px;
+
+  fill: $main-color;
+
+  &:active {
+    opacity: 0.3;
+
+    fill: $main-color;
+  }
+}
+
 .logo__svg--tablet,
 .logo__svg--desktop {
   display: none;
@@ -43,6 +56,10 @@
 
 @media (min-width: $desktop-width) {
   .logo__svg--tablet {
+    display: none;
+  }
+
+  .logo__svg--non-desktop {
     display: none;
   }
 

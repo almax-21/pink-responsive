@@ -1,0 +1,34 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  width: 172px;
+  margin: 0;
+
+  @include list-reset;
+}
+
+.socials__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+
+  background-color: #fefefe;
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+
+  transition-duration: $animation-time;
+
+  svg {
+    fill: $additional-color;
+  }
+
+  &:hover {
+    border-color: rgb(40, 54, 69);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
