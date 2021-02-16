@@ -1,0 +1,82 @@
+.page-headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 237px;
+  margin: 0;
+
+  background-color: $main-color;
+  background-image: url("../img/bg-headline-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-headline-mobile@2x.jpg");
+  }
+}
+
+.page-headline__text {
+  margin-top: 12px;
+
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: $white;
+
+  &--photo {
+    width: 175px;
+  }
+
+  &--contest {
+    width: 230px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-headline {
+    height: 440px;
+
+    background-image: url("../img/bg-headline-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-headline-tablet@2x.jpg");
+    }
+  }
+
+  .page-headline__text {
+    margin-top: 40px;
+
+    font-size: 50px;
+    line-height: 60px;
+
+    &--photo {
+      width: 350px;
+    }
+
+    &--contest {
+      width: 475px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-headline {
+    height: 395px;
+
+    background-image: url("../img/bg-headline-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-headline-desktop@2x.jpg");
+    }
+  }
+
+  .page-headline__text {
+    margin-top: 75px;
+
+    &--contest {
+      width: 750px;
+    }
+  }
+}
