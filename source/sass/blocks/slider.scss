@@ -34,6 +34,18 @@
 
 .slider__arrow {
   display: none;
+
+  cursor: pointer;
+
+  transition-duration: $animation-time;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
 }
 
 .slider__dots {
