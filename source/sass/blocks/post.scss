@@ -1,0 +1,159 @@
+.post {
+  width: 280px;
+}
+
+.post--extended {
+  position: relative;
+
+  width: 320px;
+
+  &::before {
+    content: "панорама дня";
+    position: absolute;
+    top: 0;
+    right: 20px;
+
+    height: 36px;
+    padding: 6px 19px;
+
+    font-weight: bold;
+    font-size: 12px;
+    color: $white;
+    text-transform: uppercase;
+
+    background-color: $additional-color;
+  }
+}
+
+.post__image {
+  margin-bottom: -5px;
+}
+
+.post__wrap {
+  padding-top: 15px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-left: 17px;
+
+  background-color: $white-two;
+}
+
+.post--extended .post__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.post__author {
+  cite {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  time {
+    font-weight: 300;
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+}
+
+.post__comment {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.post__likes-button {
+  padding: 0;
+
+  border: none;
+  cursor: pointer;
+
+  svg {
+    fill: $main-color;
+  }
+}
+
+.post__likes-button--added svg {
+  animation-name: like-scale;
+  animation-duration: 0.25s;
+
+  fill: $additional-color;
+}
+
+.post__likes-counter {
+  display: inline-block;
+  margin-bottom: 3px;
+  margin-left: 10px;
+
+  font-size: 12px;
+  vertical-align: middle;
+  color: $additional-color;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .post {
+    width: 300px;
+  }
+
+  .post--extended {
+    width: 660px;
+
+    &::before {
+      top: 55px;
+    }
+  }
+
+  .post--extended .post__image {
+    height: 509px;
+
+    object-fit: cover;
+  }
+
+  .post__comment {
+    margin-bottom: 0;
+  }
+
+  .post__wrap {
+    position: relative;
+
+    min-height: 155px;
+    margin: 0 auto;
+    padding-top: 21px;
+    padding-right: 15px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+  }
+
+  .post--extended .post__wrap {
+    width: 620px;
+    min-height: 121px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+  }
+
+  .post__likes-wrapper {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+  }
+
+  .post--extended .post__likes-wrapper {
+    top: 25px;
+    right: 25px;
+    bottom: auto;
+    left: auto;
+
+    width: 120px;
+  }
+
+  .post__likes-counter {
+    margin: 0;
+  }
+}

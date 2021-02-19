@@ -82,114 +82,163 @@
 
         <ul class="gallery__list">
           <li class="gallery__item post post--extended">
-            <img class="post__image" src="#" alt="Мост через реку">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Мост через реку">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Анна</cite> (5 минут назад)
+                <cite>Анна</cite> <time>(5 минут назад)</time>
               </span>
               <p class="post__comment">
                 Прыгать или нет? Напишите в комментарии свой совет и смотрите
                 прямую трансляцию в перископе, задавайте свои вопросы!
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">215</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>215</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Белая спортивная машина">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Белая спортивная машина">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Левон</cite> (5 часов назад)
+                <cite>Левон</cite> <time>(5 часов назад)</time>
               </span>
               <p class="post__comment">
                 Вчера он на луну летал, сегодня в руки к нам попал.
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">356</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>356</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Барабанная установка">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Барабанная установка">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Антон</cite> (12 часов назад)
+                <cite>Антон</cite> <time>(12 часов назад)</time>
               </span>
               <p class="post__comment">
                 Соседи будут рады!
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">666</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>666</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Прозрачная крыша офиса на фоне облаков">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Прозрачная крыша">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Борис</cite> (20 часов назад)
+                <cite>Борис</cite> <time>(20 часов назад)</time>
               </span>
               <p class="post__comment">
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">215</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>215</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Кубанская бахча">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-4-tablet@1x.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-4-mobile@1x.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="Кубанская бахча">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Сергей</cite> (25 часов назад)
+                <cite>Сергей</cite> <time>(25 часов назад)</time>
               </span>
               <p class="post__comment">
                 Самая кубанская в мире!
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">4</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>4</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Зеленый склон горы">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-5-tablet@1x.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-5-mobile@1x.jpg" srcset="img/photo-5-mobile@2x.jpg 2x" alt="Зеленый склон горы">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Максим</cite> (40 часов назад)
+                <cite>Максим</cite> <time>(40 часов назад)</time>
               </span>
               <p class="post__comment">
                 Где снег-то?
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">150</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>150</span></span>
               </div>
             </div>
           </li>
 
           <li class="gallery__item post">
-            <img class="post__image" src="#" alt="Крыло летящего самолета на фоне заката">
+            <picture>
+              <source media="(min-width: 660px)" srcset="img/photo-6-tablet@1x.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+              <img class="post__image" src="img/photo-6-mobile@1x.jpg" srcset="img/photo-6-mobile@2x.jpg 2x" alt="Закат из иллюминатора самолета">
+            </picture>
             <div class="post__wrap">
               <span class="post__author">
-                <cite>Надежда</cite> (45 часов назад)
+                <cite>Надежда</cite> <time>(45 часов назад)</time>
               </span>
               <p class="post__comment">
                 Всем GM и взаимные лайки!
               </p>
               <div class="post__likes-wrapper">
-                <button class="post__likes-button" type="button">Нравится</button>
-                Нравится: <span class="post__likes-number">2560</span>
+                <button class="post__likes-button" type="button">
+                  <svg width="12.5" height="12">
+                    <use xlink:href="img/sprite.svg#icon-heart"></use>
+                  </svg>
+                </button>
+                <span class="post__likes-counter">Нравится: <span>2560</span></span>
               </div>
             </div>
           </li>
@@ -255,5 +304,6 @@
     <div class="overlay"></div>
 
     <script src="js/nav.min.js"></script>
+    <script src="js/likes.min.js"></script>
   </body>
 </html>
