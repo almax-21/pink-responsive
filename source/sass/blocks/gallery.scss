@@ -45,7 +45,6 @@
   .gallery__list {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
     width: 660px;
     margin: 0 auto;
   }
@@ -62,6 +61,37 @@
     &:first-child {
       margin: 0;
       margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__lead {
+    width: 600px;
+    margin-bottom: 87px;
+  }
+
+  .gallery__list {
+    justify-content: center;
+    width: 1200px;
+  }
+
+  .gallery__item {
+    margin-bottom: 50px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    &:nth-child(3n) {
+      margin-right: 20px;
+      margin-left: 20px;
     }
   }
 }
