@@ -3,14 +3,7 @@
 }
 
 .gallery__lead {
-  width: 76%;
-  margin: 0 auto;
   margin-bottom: 50px;
-
-  font-size: 14px;
-  line-height: 30px;
-  text-align: center;
-  color: $main-color;
 }
 
 .gallery__list {
@@ -35,11 +28,7 @@
   }
 
   .gallery__lead {
-    width: 500px;
     margin-bottom: 75px;
-
-    font-size: 18px;
-    line-height: 30px;
   }
 
   .gallery__list {
@@ -67,7 +56,6 @@
 
 @media (min-width: $desktop-width) {
   .gallery__lead {
-    width: 600px;
     margin-bottom: 87px;
   }
 
