@@ -34,14 +34,24 @@
   margin-bottom: 10px;
 }
 
+.post__likes-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .post__likes-button {
   padding: 0;
 
+  background-color: transparent;
   border: none;
   cursor: pointer;
 
   svg {
     fill: $main-color;
+  }
+
+  &:focus {
+    outline-offset: 5px;
   }
 }
 
@@ -53,8 +63,6 @@
 }
 
 .post__likes-counter {
-  display: inline-block;
-  margin-bottom: 3px;
   margin-left: 10px;
 
   font-size: 12px;
