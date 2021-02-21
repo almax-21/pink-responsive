@@ -12,6 +12,7 @@
 
   border: 3px solid $white;
   border-radius: 30px;
+  cursor: pointer;
 
   transition: $animation-time;
 
@@ -26,14 +27,61 @@
   }
 }
 
+.button--upload {
+  color: $additional-color;
+
+  border-color: $additional-color;
+
+  &:hover {
+    color: $white;
+
+    background-color: $additional-color;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--cancel {
+  color: $main-color;
+
+  border-color: $main-color;
+  opacity: 0.1;
+
+  &:hover {
+    color: $main-color;
+
+    opacity: 0.3;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: $main-color;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .button {
     width: 300px;
+  }
+
+  .button--upload,
+  .button--cancel {
+    width: 260px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .button {
     font-size: 21px;
+  }
+
+  .button--upload,
+  .button--cancel {
+    width: 183px;
+
+    font-size: 18px;
   }
 }

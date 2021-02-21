@@ -1,7 +1,6 @@
 .lead {
   width: 76%;
   margin: 0 auto;
-  margin-bottom: 50px;
 
   font-size: 14px;
   line-height: 30px;
@@ -12,7 +11,6 @@
 @media (min-width: $tablet-width) {
   .lead {
     width: 500px;
-    margin-bottom: 75px;
 
     font-size: 18px;
     line-height: 30px;
@@ -22,6 +20,5 @@
 @media (min-width: $desktop-width) {
   .lead {
     width: 600px;
-    margin-bottom: 87px;
   }
 }
