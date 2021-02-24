@@ -22,7 +22,7 @@
 
     <!-- header -->
     <header class="header">
-      <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
+      <nav class="header__nav main-nav main-nav--nojs">
         <div class="main-nav__wrapper">
           <a class="main-nav__logo logo" href="index.html" aria-label="На главную">
             <svg class="logo__svg logo__svg--mobile" width="75" height="23" viewBox="0 0 74.426 22.859">
@@ -75,7 +75,7 @@
             Конкурс на самое безбашенное путешествие с Пинк
           </span>
         </h1>
-        <p class="contest__lead">
+        <p class="contest__lead lead">
           Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span>Пожалуйста, заполните форму ниже:</span>
         </p>
@@ -84,11 +84,11 @@
           <fieldset class="form__fieldset form__fieldset--full-name">
             <p class="form__group">
               <label class="form__label form__label--text" for="last-name">Фамилия:</label>
-              <input class="form__input form__input--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию*" required>
+              <input class="form__input form__input--text" id="last-name" type="text" name="last-name" placeholder="Укажите фамилию *" required>
             </p>
             <p class="form__group">
               <label class="form__label form__label--text" for="first-name">Имя:</label>
-              <input class="form__input form__input--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя*" required>
+              <input class="form__input form__input--text" id="first-name" type="text" name="first-name" placeholder="Введите ваше имя *" required>
             </p>
             <p class="form__group">
               <label class="form__label form__label--text" for="patronymic">Отчество:</label>
@@ -97,7 +97,7 @@
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--achievements">
-            <legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
+            <div class="form__legend">Ваши безбашенные достижения в путешествии</div>
             <ul class="form__list">
               <li class="form__item">
                 <input class="form__input form__input--checkbox visually-hidden" id="selfie" type="checkbox" name="selfie" checked>
@@ -133,35 +133,35 @@
             </p>
             <p class="form__group">
               <label class="form__label form__label--text" for="email">Адрес почты</label>
-              <input class="form__input form__input--text" id="email" type="email" name="email" placeholder="Введите почту*" required>
+              <input class="form__input form__input--text" id="email" type="email" name="email" placeholder="Введите почту *" required>
             </p>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--apps">
-            <legend class="form__legend">С каким приложением путешествовали?</legend>
+            <div class="form__legend">С каким приложением путешествовали?</div>
             <ul class="form__list">
               <li class="form__item">
-                <input class="form__input form__input--radio visually-hidden" id="ios" type="radio" name="ios" checked>
+                <input class="form__input form__input--radio visually-hidden" id="ios" type="radio" name="version-group" value="ios" checked>
                 <label class="form__label form__label--radio" for="ios">Pink для iOS</label>
               </li>
               <li class="form__item">
-                <input class="form__input form__input--radio visually-hidden" id="android" type="radio" name="android">
+                <input class="form__input form__input--radio visually-hidden" id="android" type="radio" name="version-group" value="android">
                 <label class="form__label form__label--radio" for="android">Pink на Android</label>
               </li>
               <li class="form__item">
-                <input class="form__input form__input--radio visually-hidden" id="windows-phone" type="radio" name="windows-phone">
+                <input class="form__input form__input--radio visually-hidden" id="windows-phone" type="radio" name="version-group" value="windows-phone">
                 <label class="form__label form__label--radio" for="windows-phone">Windows Phone</label>
               </li>
             </ul>
           </fieldset>
 
           <fieldset class="form__fieldset form__fieldset--comment">
-            <legend class="form__legend">Опишите свои эмоции</legend>
+            <div class="form__legend">Опишите свои эмоции</div>
             <textarea class="form__textarea" name="comment" placeholder="Можно прям в красках, не стесняясь в выражениях" required></textarea>
           </fieldset>
 
           <button class="form__button" type="submit">Отправить форму</button>
-          <span class="form__requirement"><sup>*</sup> – обязательные поля</span>
+          <span class="form__requirement"><sup>*</sup> — обязательные поля</span>
 
         </form>
       </section>
