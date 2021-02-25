@@ -7,7 +7,16 @@
   line-height: 30px;
 }
 
+.form__wrap {
+  margin-bottom: 27px;
+  padding-top: 40px;
+
+  background-color: $white-two;
+}
+
 .form__fieldset {
+  position: relative;
+
   margin: 0;
   margin-bottom: 27px;
   padding: 0 20px;
@@ -16,15 +25,13 @@
 
   &--achievements,
   &--apps {
-    background-color: $white-two;
+    margin-bottom: 0;
   }
 }
 
 .form__legend {
   width: 220px;
-  margin-top: 38px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 
   line-height: 18px;
   text-align: center;
@@ -161,6 +168,10 @@
 
 .form__fieldset--contacts {
   margin-top: 5px;
+
+  .form__legend {
+    display: none;
+  }
 }
 
 .form__fieldset--apps .form__item {
@@ -168,10 +179,10 @@
 }
 
 .form__fieldset--comment {
+  margin-top: 8px;
   margin-bottom: 40px;
 
   .form__legend {
-    margin-top: 10px;
     margin-bottom: 17px;
   }
 }
@@ -186,9 +197,14 @@
   resize: none;
 }
 
+.form__submit-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .form__button {
   width: 280px;
-  margin: 0 auto;
   padding: 22px;
 
   font-weight: bold;
@@ -198,6 +214,7 @@
   background-color: #2aab6d;
   border: none;
   border-radius: 3px;
+  cursor: pointer;
 
   &:hover {
     background-color: #1c9b5e;
@@ -222,5 +239,150 @@
 
   sup {
     color: $additional-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form__wrap {
+    padding: 0;
+
+    background-color: $white;
+
+    &--apps {
+      order: -2;
+    }
+  }
+
+  .form__fieldset {
+    width: 94%;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+
+    border: 2px solid #e5e5e5;
+
+    &--full-name {
+      order: -3;
+      width: 660px;
+      margin-bottom: 5px;
+
+      border: none;
+    }
+  }
+
+  .form__legend {
+    width: auto;
+    padding: 0 25px;
+  }
+
+  .form__group {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 52px;
+  }
+
+  .form__label--text {
+    margin-top: 0;
+    margin-right: 18px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .form__input--text {
+    flex-grow: 1;
+  }
+
+  .form__list {
+    margin-top: 47px;
+    margin-bottom: 60px;
+    margin-left: 6.6%;
+
+    .form__label {
+      padding-left: 60px;
+    }
+  }
+
+  .form__fieldset--contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    order: -1;
+    margin-bottom: 60px;
+    padding-top: 38px;
+
+    .form__legend {
+      display: block;
+    }
+
+    .form__group {
+      position: relative;
+
+      flex-direction: column-reverse;
+      width: 500px;
+      margin-bottom: 25px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 2px;
+        right: 2px;
+
+        width: 60px;
+        height: 60px;
+
+        background-color: #e5e5e5;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    .form__group--phone::before {
+      background-image: url("../img/icon-phone.svg");
+    }
+
+    .form__group--mail::before {
+      background-image: url("../img/icon-mail.svg");
+    }
+
+    .form__label {
+      margin-top: 10px;
+      margin-right: auto;
+      margin-left: 20px;
+    }
+  }
+
+  .form__fieldset--achievements {
+    margin-bottom: 22px;
+
+    .form__list {
+      margin-bottom: 52px;
+    }
+  }
+
+  .form__fieldset--comment {
+    margin-bottom: 67px;
+    padding: 20px 57px 40px 57px;
+  }
+
+  .form__textarea {
+    min-height: 195px;
+  }
+
+  .form__submit-wrap {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 94%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+  }
+
+  .form__button {
+    width: 300px;
+  }
+
+  .form__requirement {
+    margin-top: 0;
   }
 }

@@ -10,3 +10,18 @@
     display: none;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contest__title {
+    margin-bottom: 92px;
+  }
+
+  .contest__lead {
+    width: 500px;
+    margin-bottom: 70px;
+
+    span {
+      display: block;
+    }
+  }
+}
