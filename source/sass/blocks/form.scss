@@ -240,6 +240,10 @@
   sup {
     color: $additional-color;
   }
+
+  span {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -384,5 +388,93 @@
 
   .form__requirement {
     margin-top: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .form__wrap,
+  .form__fieldset {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  .form__fieldset--full-name {
+    width: 440px;
+    margin-top: 11px;
+    margin-right: 65px;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .form__fieldset--apps {
+    width: 440px;
+  }
+
+  .form__list {
+    padding-left: 30px;
+  }
+
+  .form__fieldset--contacts {
+    flex-direction: row;
+    justify-content: center;
+    width: 940px;
+    margin-bottom: 55px;
+    padding-top: 35px;
+
+    .form__group {
+      width: 375px;
+      margin-bottom: 13px;
+
+      &--phone {
+        margin-right: 70px;
+      }
+    }
+  }
+
+  .form__fieldset--achievements {
+    width: 940px;
+    padding-top: 50px;
+    padding-right: 55px;
+    padding-bottom: 8px;
+    padding-left: 55px;
+
+    .form__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .form__item {
+      flex-grow: 1;
+    }
+  }
+
+  .form__fieldset--comment {
+    width: 940px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+  }
+
+  .form__textarea {
+    min-height: 130px;
+  }
+
+  .form__submit-wrap {
+    width: 940px;
+    margin-bottom: 0;
+  }
+
+  .form__requirement span {
+    display: inline;
   }
 }

@@ -25,3 +25,14 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+  .contest__lead {
+    width: 760px;
+    margin-bottom: 70px;
+
+    span {
+      display: inline;
+    }
+  }
+}
