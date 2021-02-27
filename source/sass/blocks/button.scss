@@ -62,6 +62,33 @@
   }
 }
 
+.button--form {
+  width: 280px;
+  padding: 22px;
+
+  font-weight: bold;
+  font-size: 18px;
+  color: $white;
+  text-transform: uppercase;
+
+  background-color: #2aab6d;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .button {
     width: 300px;
@@ -70,6 +97,10 @@
   .button--upload,
   .button--cancel {
     width: 260px;
+  }
+
+  .button--form {
+    width: 300px;
   }
 }
 
