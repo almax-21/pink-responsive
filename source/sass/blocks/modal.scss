@@ -6,7 +6,7 @@
 
   display: none;
   width: 320px;
-  margin: 0 auto;
+  margin-left: -160px;
   padding-top: 40px;
   padding-right: 20px;
   padding-bottom: 50px;
@@ -16,11 +16,21 @@
 
   background-color: $white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-  transform: translate(-50%, -50%);
+}
+
+.modal--error {
+  margin-top: -145.5px;
 }
 
 .modal--success {
-  @include modal-second-bg;
+  margin-top: -188.5px;
+}
+
+.modal--show {
+  display: block;
+
+  animation-name: bounce;
+  animation-duration: 0.5s;
 }
 
 .modal__title {
@@ -56,6 +66,9 @@
 @media (min-width: $tablet-width) {
   .modal {
     width: 460px;
+    min-height: 376px;
+    margin-top: -188px;
+    margin-left: -230px;
   }
 
   .modal__title {
@@ -81,6 +94,7 @@
 @media (min-width: $desktop-width) {
   .modal {
     width: 780px;
+    margin-left: -390px;
   }
 
   .modal__title {

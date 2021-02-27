@@ -131,12 +131,14 @@
           <fieldset class="form__fieldset form__fieldset--contacts">
             <legend class="form__legend">Контактная информация</legend>
             <p class="form__group form__group--phone">
-              <label class="form__label form__label--text" for="tel">Номер телефона</label>
-              <input class="form__input form__input--text" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста">
+              <input class="form__input form__input--text form__input--tooltip" id="tel" type="tel" name="tel" placeholder="Номер, пожалуйста" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+              <label class="form__label form__label--text" for="tel">
+                Номер телефона <span class="form__tooltip">(начиная с +7)</span>
+              </label>
             </p>
             <p class="form__group form__group--mail">
-              <label class="form__label form__label--text" for="email">Адрес почты</label>
-              <input class="form__input form__input--text" id="email" type="email" name="email" placeholder="Введите почту *" required>
+              <input class="form__input form__input--text form__input--tooltip" id="email" type="email" name="email" placeholder="Введите почту *" required>
+              <label class="form__label form__label--text" for="email">Адрес почты <span class="form__tooltip">(example@mail.com)</label>
             </p>
           </fieldset>
 
@@ -251,8 +253,10 @@
       <button class="modal__button button--form" type="button">Закрыть окно</button>
     </section>
 
-    <div class="overlay"></div>
+    <div class="overlay overlay--nav"></div>
+    <div class="overlay overlay--modal"></div>
 
     <script src="js/nav.min.js"></script>
+    <script src="js/modals.min.js"></script>
   </body>
 </html>

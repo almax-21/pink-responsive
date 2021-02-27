@@ -172,6 +172,20 @@
   .form__legend {
     display: none;
   }
+
+  .form__group {
+    flex-direction: column-reverse;
+  }
+}
+
+.form__tooltip {
+  display: none;
+
+  text-transform: lowercase;
+}
+
+.form__input--tooltip:focus + .form__label .form__tooltip {
+  display: inline;
 }
 
 .form__fieldset--apps .form__item {
@@ -303,8 +317,8 @@
       &::before {
         content: "";
         position: absolute;
-        top: 2px;
         right: 2px;
+        bottom: 2px;
 
         width: 60px;
         height: 60px;
@@ -401,11 +415,12 @@
     justify-content: center;
     width: 940px;
     margin-bottom: 55px;
-    padding-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 35px;
 
     .form__group {
       width: 375px;
-      margin-bottom: 13px;
+      margin-bottom: 0;
 
       &--phone {
         margin-right: 70px;
