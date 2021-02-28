@@ -51,6 +51,11 @@
   }
 
   &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
     outline-offset: 5px;
   }
 }
@@ -67,7 +72,7 @@
 
   font-size: 12px;
   vertical-align: middle;
-  color: $additional-color;
+  color: $additional-contrast-color;
   text-transform: uppercase;
 }
 

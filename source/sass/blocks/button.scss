@@ -28,14 +28,14 @@
 }
 
 .button--upload {
-  color: $additional-color;
+  color: $additional-contrast-color;
 
-  border-color: $additional-color;
+  border-color: $additional-contrast-color;
 
   &:hover {
     color: $white;
 
-    background-color: $additional-color;
+    background-color: $additional-contrast-color;
   }
 
   &:active {
@@ -59,6 +59,15 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: $main-color;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
+    opacity: 1;
   }
 }
 

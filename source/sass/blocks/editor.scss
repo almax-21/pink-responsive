@@ -60,6 +60,15 @@
   &:hover {
     opacity: 0.5;
   }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
+    opacity: 1;
+  }
 }
 
 .editor__control--active {
