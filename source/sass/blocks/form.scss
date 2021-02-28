@@ -412,6 +412,7 @@
 
   .form__fieldset--contacts {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     width: 940px;
     margin-bottom: 55px;
@@ -422,7 +423,7 @@
       width: 375px;
       margin-bottom: 0;
 
-      &--phone {
+      &:nth-child(2n) {
         margin-right: 70px;
       }
     }
