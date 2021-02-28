@@ -1,7 +1,6 @@
 .button {
   display: block;
   width: 280px;
-  height: 55px;
   padding: 15px;
 
   font-weight: bold;
@@ -49,6 +48,8 @@
   border-color: $main-color;
   opacity: 0.1;
 
+  @include focus-visible;
+
   &:hover {
     color: $main-color;
 
@@ -59,15 +60,6 @@
     color: rgba(255, 255, 255, 0.3);
 
     background-color: $main-color;
-  }
-
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: auto;
-    opacity: 1;
   }
 }
 

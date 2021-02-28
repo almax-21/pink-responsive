@@ -18,3 +18,15 @@
     background-color: $white-two;
   }
 }
+
+@mixin focus-visible {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: auto;
+    outline-offset: 2px;
+    opacity: 1;
+  }
+}

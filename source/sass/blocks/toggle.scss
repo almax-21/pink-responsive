@@ -9,14 +9,7 @@
   border: none;
   cursor: pointer;
 
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: 2px solid orange;
-    outline-offset: 2px;
-  }
+  @include focus-visible;
 }
 
 .toggle:hover .toggle__bar {

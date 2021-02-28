@@ -98,7 +98,6 @@
     padding-bottom: 20px;
 
     background-image: url("../img/iphone-screen-3-tablet@1x.png");
-    background-repeat: no-repeat;
     background-position: top left;
     background-size: 268px 481px;
 
@@ -109,7 +108,7 @@
 
   .features__item {
     width: 310px;
-    max-width: auto;
+    max-width: none;
     margin-right: 0;
 
     text-align: left;

@@ -1,8 +1,6 @@
 .map {
   position: relative;
 
-  height: 200px;
-
   background-color: $white-two;
 }
 
@@ -21,27 +19,22 @@
 .map__image {
   position: relative;
   z-index: 5;
+  height: 200px;
 
   display: block;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-    height: 350px;
-  }
-
-  .map__iframe {
+  .map__iframe,
+  .map__image {
     height: 350px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    height: 500px;
-  }
-
-  .map__iframe {
+  .map__iframe,
+  .map__image {
     height: 500px;
   }
 }

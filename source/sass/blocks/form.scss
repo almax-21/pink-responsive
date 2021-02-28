@@ -7,13 +7,6 @@
   line-height: 30px;
 }
 
-.form__wrap {
-  margin-bottom: 27px;
-  padding-top: 40px;
-
-  background-color: $white-two;
-}
-
 .form__fieldset {
   position: relative;
 
@@ -27,6 +20,13 @@
   &--apps {
     margin-bottom: 0;
   }
+}
+
+.form__wrap {
+  margin-bottom: 27px;
+  padding-top: 40px;
+
+  background-color: $white-two;
 }
 
 .form__legend {
@@ -404,10 +404,10 @@
 
   .form__fieldset--apps {
     width: 440px;
-  }
 
-  .form__list {
-    padding-left: 30px;
+    .form__list {
+      padding-left: 30px;
+    }
   }
 
   .form__fieldset--contacts {

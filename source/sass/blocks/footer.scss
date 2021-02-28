@@ -2,10 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 284px;
   padding-top: 40px;
-
-  fill: $main-color;
 }
 
 .footer__logo {
@@ -24,21 +21,20 @@
 }
 
 .footer__copy-link {
-  line-height: 18px;
   color: $main-color;
+}
 
-  svg {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    margin-left: 5px;
+.footer__copy-link svg {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin-left: 5px;
 
-    vertical-align: middle;
+  vertical-align: middle;
 
-    transition-duration: $animation-time;
+  transition-duration: $animation-time;
 
-    fill: $additional-color;
-  }
+  fill: $additional-color;
 }
 
 .footer__copy-link:hover svg {

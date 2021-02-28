@@ -9,7 +9,7 @@
 .post__wrap {
   padding-top: 15px;
   padding-right: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
   padding-left: 17px;
 
   background-color: $white-two;
@@ -50,14 +50,7 @@
     fill: $main-color;
   }
 
-  &:focus {
-    outline: none;
-  }
-
-  &:focus-visible {
-    outline: auto;
-    outline-offset: 5px;
-  }
+  @include focus-visible;
 }
 
 .post__likes-button--added svg {

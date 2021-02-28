@@ -1,5 +1,5 @@
 .editor {
-  margin-top: 55px;
+  margin-top: 40px;
 }
 
 .editor__lead {
@@ -103,11 +103,14 @@
 
   width: 14px;
   height: 14px;
+  padding: 0;
 
   background-color: $white-two;
   border: 2px solid $additional-color;
   border-radius: 50%;
   cursor: pointer;
+
+  @include focus-visible;
 }
 
 .editor__buttons {
@@ -123,10 +126,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .editor {
-    margin-top: 40px;
-  }
-
   .editor__lead {
     width: 500px;
     margin-bottom: 67px;
@@ -135,7 +134,6 @@
   .editor__wrap {
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     min-height: 511px;
     padding-top: 7.73%;
 
@@ -246,10 +244,6 @@
 
   .editor__button {
     margin-bottom: 24px;
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 

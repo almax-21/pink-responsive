@@ -6,7 +6,7 @@
   .research {
     display: block;
 
-    background-color: #ffffff;
+    background-color: $white;
   }
 
   .research__container {
@@ -94,6 +94,5 @@
 
   .research__timer {
     top: 15px;
-    left: 0;
   }
 }

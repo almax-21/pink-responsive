@@ -4,7 +4,7 @@
 
   transition-duration: $animation-time;
 
-  fill: #ffffff;
+  fill: $white;
 
   &:hover {
     fill: $additional-color;
@@ -13,7 +13,7 @@
   &:active {
     opacity: 0.3;
 
-    fill: #ffffff;
+    fill: $white;
   }
 }
 
