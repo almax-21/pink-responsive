@@ -12,14 +12,6 @@
   @include focus-visible;
 }
 
-.toggle:hover .toggle__bar {
-  background-color: $additional-color;
-}
-
-.toggle:active .toggle__bar {
-  background-color: $additional-active-color;
-}
-
 .toggle__bar {
   position: absolute;
 
@@ -31,7 +23,15 @@
   background-color: #ffffff;
 
   transition-timing-function: linear;
-  transition-duration: $animation-time;
+  transition-duration: 0.3s;
+}
+
+.toggle:hover .toggle__bar {
+  background-color: $additional-color;
+}
+
+.toggle:active .toggle__bar {
+  background-color: $additional-active-color;
 }
 
 .toggle__bar-1 {
