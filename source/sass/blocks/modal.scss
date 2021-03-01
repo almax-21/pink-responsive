@@ -6,6 +6,7 @@
 
   display: none;
   width: 320px;
+  margin-top: -188.5px;
   margin-left: -160px;
   padding-top: 40px;
   padding-right: 20px;
@@ -16,14 +17,6 @@
 
   background-color: $white;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-}
-
-.modal--error {
-  margin-top: -145.5px;
-}
-
-.modal--success {
-  margin-top: -188.5px;
 }
 
 .modal--show {
@@ -43,24 +36,11 @@
 }
 
 .modal__text {
-  margin: 0 auto;
+  margin-bottom: 78px;
 
   span {
     display: block;
   }
-}
-
-.modal--error .modal__text {
-  margin-bottom: 40px;
-}
-
-.modal--success .modal__text {
-  margin-bottom: 78px;
-}
-
-.modal__button {
-  position: relative;
-  z-index: 200;
 }
 
 @media (min-width: $tablet-width) {
@@ -82,6 +62,8 @@
 
   .modal__text {
     width: 310px;
+    margin-right: auto;
+    margin-left: auto;
 
     font-size: 18px;
 
@@ -107,25 +89,7 @@
   }
 
   .modal__text {
-    width: 350px;
-  }
-
-  .modal--error {
-    .modal__text {
-      margin-bottom: 110px;
-    }
-
-    @include modal-second-bg;
-  }
-
-  .modal--success {
-    .modal__text {
-      width: 400px;
-      margin-bottom: 90px;
-    }
-
-    .modal__button {
-      width: 460px;
-    }
+    width: 400px;
+    margin-bottom: 90px;
   }
 }
