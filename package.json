@@ -1,8 +1,8 @@
 {
-  "name": "sedona-19",
-  "version": "17.0.0",
+  "name": "pink-responsive",
+  "version": "1.1",
   "private": true,
-  "description": "Личный проект «Седона» от HTML Academy",
+  "description": "Личный проект «Pink»",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
