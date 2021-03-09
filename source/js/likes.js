@@ -1,20 +1,22 @@
-const likeButtons = document.querySelectorAll(".post__likes-button");
-const counters = document.querySelectorAll(".post__likes-counter");
+/* eslint-disable no-plusplus */
 
-const addLikeClickHandler = function (button, counter) {
-  const currentNumber = counter.querySelector('span');
+const likeButtons = document.querySelectorAll('.post__likes-button');
+const counters = document.querySelectorAll('.post__likes-counter');
 
-  button.addEventListener('click', function () {
-    if (button.classList.contains('post__likes-button--added')) {
+for (let i = 0; i < likeButtons.length; i += 1) {
+  const currentLikeButton = likeButtons[i];
+  const currentNumber = counters[i].querySelector('span');
+
+  currentLikeButton.onclick = (evt) => {
+    const isPressed = evt.target.getAttribute('aria-pressed') === 'true';
+
+    if (isPressed) {
       currentNumber.textContent--;
     } else {
       currentNumber.textContent++;
     }
 
-    button.classList.toggle('post__likes-button--added');
-  });
-};
-
-for (let i = 0; i < likeButtons.length; i += 1) {
-  addLikeClickHandler(likeButtons[i], counters[i]);
+    evt.target.setAttribute('aria-pressed', String(!isPressed));
+    currentLikeButton.classList.toggle('post__likes-button--added');
+  };
 }
