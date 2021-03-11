@@ -2,12 +2,25 @@
   position: relative;
 }
 
-.slider__slide {
-  display: none;
+.slider__container {
+  overflow: hidden;
+}
 
-  &--active {
-    display: block;
-  }
+.slider__track {
+  position: relative;
+  left: 50%;
+
+  display: flex;
+  justify-content: space-around;
+  width: 262%;
+
+  transform: translateX(-50%);
+
+  transition: $animation-time;
+}
+
+.slider__slide {
+  width: 27%;
 }
 
 .slider__author {
@@ -122,5 +135,9 @@
     &--next {
       right: 104px;
     }
+  }
+
+  .slider__dots {
+    display: none;
   }
 }

@@ -174,55 +174,59 @@
         </svg>
 
         <div class="reviews__slider slider">
-          <div class="slider__slide slider__slide--active">
-            <div class="slider__author">
-              Николай Петров
-              <span class="slider__author-info">25 лет, водитель трамвая</span>
+          <div class="slider__container">
+            <div class="slider__track">
+              <div class="slider__slide">
+                <div class="slider__author">
+                  Николай Петров
+                  <span class="slider__author-info">25 лет, водитель трамвая</span>
+                </div>
+                <p class="slider__quote">
+                  «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+                  А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
+                </p>
+              </div>
+              <div class="slider__slide">
+                <div class="slider__author">
+                  Елена Александрова
+                  <span class="slider__author-info">19 лет, вредина</span>
+                </div>
+                <p class="slider__quote">
+                  «Привет, часто пользуюсь приложениями для обработки фото, но это самое лучшее!
+                  Лаконичный дизайн, простота использования, розовый фильтр - это просто ох@#?но =)»
+                </p>
+              </div>
+              <div class="slider__slide">
+                <div class="slider__author">
+                  Алексей Навальный
+                  <span class="slider__author-info">44 года, политзаключенный</span>
+                </div>
+                <p class="slider__quote">
+                  «Всё имеет свою цену — рок-звёзды умирают от передоза, политиков сажают в тюрьму.
+                  Но от того, что меня поддерживает большое количество людей в комментариях, я испытываю эйфорию.»
+                </p>
+              </div>
             </div>
-            <p class="slider__quote">
-              «Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
-              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
-            </p>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__author">
-              Елена Александрова
-              <span class="slider__author-info">19 лет, вредина</span>
-            </div>
-            <p class="slider__quote">
-              «Привет, часто пользуюсь приложениями для обработки фото, но это самое лучшее!
-              Лаконичный дизайн, простота использования, розовый фильтр - это просто ох@#?но =)»
-            </p>
-          </div>
-          <div class="slider__slide">
-            <div class="slider__author">
-              Алексей Навальный
-              <span class="slider__author-info">44 года, политзаключенный</span>
-            </div>
-            <p class="slider__quote">
-              «Всё имеет свою цену — рок-звёзды умирают от передоза, политиков сажают в тюрьму.
-              Но от того, что меня поддерживает большое количество людей в комментариях, я испытываю эйфорию.»
-            </p>
-          </div>
 
-          <button class="slider__arrow slider__arrow--prev" type="button">
-            <span class="visually-hidden">Предыдущий слайд</span>
-            <svg width="21.706" height="41.719">
-              <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
-            </svg>
-          </button>
-          <button class="slider__arrow slider__arrow--next" type="button">
-            <span class="visually-hidden">Следующий слайд</span>
-            <svg width="21.706" height="41.719">
-              <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
-            </svg>
-          </button>
+            <button class="slider__arrow slider__arrow--prev" type="button">
+              <span class="visually-hidden">Предыдущий слайд</span>
+              <svg width="21.706" height="41.719">
+                <use xlink:href="img/sprite.svg#icon-review-arrow-left"></use>
+              </svg>
+            </button>
+            <button class="slider__arrow slider__arrow--next" type="button">
+              <span class="visually-hidden">Следующий слайд</span>
+              <svg width="21.706" height="41.719">
+                <use xlink:href="img/sprite.svg#icon-review-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
 
           <div class="slider__dots dots">
-            <button class="dots__dot dots__dot--active" type="button">
+            <button class="dots__dot" type="button">
               <span class="visually-hidden">Выбрать слайд</span>
             </button>
-            <button class="dots__dot" type="button">
+            <button class="dots__dot dots__dot--active" type="button">
               <span class="visually-hidden">Выбрать слайд</span>
             </button>
             <button class="dots__dot" type="button">
@@ -437,7 +441,7 @@
     <div class="overlay overlay--nav"></div>
 
     <script src="js/nav.min.js"></script>
-    <script src="js/slider.min.js"></script>
-    <script src="js/rates.min.js"></script>
+    <script src="js/reviews.min.js" type="module"></script>
+    <script src="js/rates.min.js" type="module"></script>
   </body>
 </html>

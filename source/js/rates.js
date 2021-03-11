@@ -1,19 +1,9 @@
-const rates = document.querySelector('.rates');
-const table = rates.querySelector('.rates__table');
-const tableDotsList = rates.querySelectorAll('.dots__dot');
-const tableDots = Array.prototype.slice.call(tableDotsList);
+/* eslint-disable import/no-unresolved, import/extensions */
 
-const addTableDotClickHandler = (dot, index) => {
-  dot.onclick = () => {
-    tableDots.map((dot) => dot.classList.remove('dots__dot--active'));
-    dot.classList.add('dots__dot--active');
+import createSlider from './createSlider.min.js';
 
-    const multiplier = index + 1;
-    const percent = multiplier * 33 - 16;  // magic =)
-    table.setAttribute('style', `transform: translateX(-${percent}%)`);
-  };
-};
+const ratesWrapper = document.querySelector('.rates__wrapper');
+const dotsCollection = document.querySelector('.rates__dots').children;
+const dots = Array.from(dotsCollection);
 
-for (let i = 0; i < tableDots.length; i += 1) {
-  addTableDotClickHandler(tableDots[i], i);
-}
+createSlider(ratesWrapper, dots);
