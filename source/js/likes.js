@@ -1,22 +1,21 @@
-/* eslint-disable no-plusplus */
-
 const likeButtons = document.querySelectorAll('.post__likes-button');
 const counters = document.querySelectorAll('.post__likes-counter');
 
 for (let i = 0; i < likeButtons.length; i += 1) {
   const currentLikeButton = likeButtons[i];
-  const currentNumber = counters[i].querySelector('span');
+  const currentCounter = counters[i].querySelector('span');
 
-  currentLikeButton.onclick = (evt) => {
-    const isPressed = evt.target.getAttribute('aria-pressed') === 'true';
+  currentLikeButton.onclick = () => {
+    const isPressed = currentLikeButton.getAttribute('aria-pressed') === 'true';
+    const currentNumber = Number(currentCounter.textContent);
 
     if (isPressed) {
-      currentNumber.textContent--;
+      currentCounter.textContent = String(currentNumber - 1);
     } else {
-      currentNumber.textContent++;
+      currentCounter.textContent = String(currentNumber + 1);
     }
 
-    evt.target.setAttribute('aria-pressed', String(!isPressed));
     currentLikeButton.classList.toggle('post__likes-button--added');
+    currentLikeButton.setAttribute('aria-pressed', String(!isPressed));
   };
 }
