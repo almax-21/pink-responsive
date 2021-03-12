@@ -2,7 +2,6 @@
   position: relative;
 
   padding-top: 40px;
-  padding-bottom: 10px;
 }
 
 .reviews__svg {
@@ -12,14 +11,12 @@
 @media (min-width: $tablet-width) {
   .reviews {
     padding-top: 25px;
-    padding-bottom: 16px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .reviews {
     padding-top: 185px;
-    padding-bottom: 0;
   }
 
   .reviews__svg {

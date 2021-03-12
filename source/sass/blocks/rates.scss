@@ -1,5 +1,5 @@
 .rates {
-  height: 500px;
+  min-height: 500px;
   padding-top: 117px;
 
   background-color: $white-two;
@@ -124,8 +124,8 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    height: 375px;
-    padding-top: 85px;
+    min-height: 383px;
+    padding-top: 90px;
 
     background-size: contain;
   }
@@ -191,8 +191,8 @@
 
 @media (min-width: $desktop-width) {
   .rates {
-    height: 515px;
-    padding-top: 138px;
+    min-height: 540px;
+    padding-top: 160px;
   }
 
   .rates__table {
